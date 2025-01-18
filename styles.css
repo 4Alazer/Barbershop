@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header styling (centered navbar and larger text) */
+/* Header styling */
 header {
     background-color: #e32525;
     padding: 15px 0;
@@ -18,10 +18,10 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Centering the navbar */
+/* Navbar styling */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Spreads items */
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -42,7 +42,7 @@ header {
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em; /* Adjusted for smaller screens */
+    font-size: 1.2em;
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 5px;
@@ -54,7 +54,7 @@ header {
     color: #eee;
 }
 
-/* Background image styling for index page */
+/* Background image section */
 .background-image {
     background-image: url('clippers1.jpg');
     background-size: cover;
@@ -67,25 +67,9 @@ header {
     padding-top: 100px;
 }
 
-/* White box that holds store title and appointment button */
-.content-box {
-    background-color: #e2d8d8;
-    padding: 30px 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 30px;
-    width: 90%;
-}
-
-.store-title h1 {
-    font-size: 2.5em;
-    color: #e32525;
-    margin-bottom: 20px;
-}
-
-/* Make an appointment button styling */
-.appointment-btn a {
+/* Button styling for Appointment and Payment */
+.appointment-btn a,
+.payment-btn a {
     text-decoration: none;
     background-color: #e32525;
     color: #f5f5f5;
@@ -93,52 +77,15 @@ header {
     font-size: 1.2em;
     border-radius: 5px;
     transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.appointment-btn a:hover {
+.appointment-btn a:hover,
+.payment-btn a:hover {
     background-color: #3e9c19;
 }
 
-/* Cash App Button */
-.payment-btn a {
-    display: inline-block; /* Ensure button behavior */
-    text-decoration: none; /* Remove underline */
-    background-color: #ffffff;
-    color: #e32525;
-    padding: 15px 30px;
-    font-size: 1.5em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add button effect */
-}
-
-.payment-btn a:hover {
-    background-color: #f0cece;
-}
-
-/* Info boxes for services and location */
-.info-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 20px;
-    padding: 0 15px;
-}
-
-.info-box {
-    background-color: #f5f5f5;
-    color: #e32525;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 45%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Main Content Section for About Us Page */
+/* Main Content Section */
 .main-content {
     display: flex;
     flex-wrap: wrap;
@@ -148,7 +95,7 @@ header {
     box-sizing: border-box;
 }
 
-/* About Us and Awards/Reviews Boxes */
+/* About Us and Awards Boxes */
 .about-box, .awards-reviews-box {
     background-color: #e32525;
     color: white;
@@ -165,7 +112,7 @@ header {
     margin-bottom: 20px;
 }
 
-/* Services and Pricing Blue Box */
+/* Services and Pricing Section */
 .services-pricing-box {
     background-color: #e32525;
     color: white;
@@ -190,30 +137,11 @@ header {
     line-height: 2em;
 }
 
-/* Awards and Reviews Section */
-.award-features {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.google-reviews h4 {
-    font-size: 1.5em;
-    color: white;
-}
-
-.google-reviews p {
-    font-size: 1.1em;
-}
-
 /* Centered Service Hours & Location Section */
 .centered-info-boxes {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
+    align-items: center;
     text-align: center;
     padding: 50px 0;
     background-color: #f9f9f9;
@@ -225,8 +153,8 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px; /* Space between boxes */
-    width: 90%; /* Responsive width */
+    margin-bottom: 20px;
+    width: 90%;
 }
 
 /* Map Section */
@@ -236,7 +164,7 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 90%; /* Responsive width */
+    width: 90%;
     max-width: 600px;
     margin: 20px auto;
     height: 300px;
@@ -275,6 +203,7 @@ footer {
         padding: 8px 15px;
     }
 
+    .appointment-btn a,
     .payment-btn a {
         font-size: 1.2em;
         padding: 10px 20px;
