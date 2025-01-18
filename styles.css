@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #ffffff; /* Cream background for the entire page */
-    line-height: 1.6; /* Improved readability */
+    line-height: 1.6;
 }
 
 /* Header styling (centered navbar and larger text) */
@@ -21,8 +21,11 @@ header {
 /* Centering the navbar */
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Spreads items */
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .navbar ul {
@@ -33,7 +36,7 @@ header {
 }
 
 .navbar ul li {
-    margin: 0 20px; /* Reduced for better mobile spacing */
+    margin: 0 15px;
 }
 
 .navbar ul li a {
@@ -56,12 +59,12 @@ header {
     background-image: url('clippers1.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 100vh; /* Changed to dynamic height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 100px; /* Reduced for better scaling */
+    padding-top: 100px;
 }
 
 /* White box that holds store title and appointment button */
@@ -72,11 +75,11 @@ header {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 30px;
-    width: 90%; /* Responsive width */
+    width: 90%;
 }
 
 .store-title h1 {
-    font-size: 2.5em; /* Adjusted for responsiveness */
+    font-size: 2.5em;
     color: #e32525;
     margin-bottom: 20px;
 }
@@ -87,7 +90,7 @@ header {
     background-color: #e32525;
     color: #f5f5f5;
     padding: 10px 20px;
-    font-size: 1.2em; /* Adjusted font size */
+    font-size: 1.2em;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -96,12 +99,29 @@ header {
     background-color: #3e9c19;
 }
 
+/* Cash App Button */
+.payment-btn a {
+    display: inline-block; /* Ensure button behavior */
+    text-decoration: none; /* Remove underline */
+    background-color: #ffffff;
+    color: #e32525;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add button effect */
+}
+
+.payment-btn a:hover {
+    background-color: #f0cece;
+}
+
 /* Info boxes for services and location */
 .info-boxes {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%; /* Full width */
+    width: 100%;
     margin-top: 20px;
     padding: 0 15px;
 }
@@ -112,25 +132,17 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%; /* Full width for responsiveness */
-    max-width: 45%; /* Constrain width on larger screens */
+    width: 100%;
+    max-width: 45%;
     text-align: center;
-    margin-bottom: 20px; /* Add spacing between boxes */
-}
-
-.info-box h3 {
-    margin-bottom: 10px;
-}
-
-.info-box p {
-    margin: 5px 0;
+    margin-bottom: 20px;
 }
 
 /* Main Content Section for About Us Page */
 .main-content {
     display: flex;
-    flex-wrap: wrap; /* Allow vertical stacking */
-    justify-content: center; /* Center content on smaller screens */
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 100px 15px;
     gap: 20px;
     box-sizing: border-box;
@@ -140,61 +152,70 @@ header {
 .about-box, .awards-reviews-box {
     background-color: #e32525;
     color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%; /* Adjust for mobile responsiveness */
+    width: 45%;
     max-width: 500px;
     text-align: center;
 }
 
 .about-box h2, .awards-reviews-box h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-/* Services and Pricing Section */
+/* Services and Pricing Blue Box */
 .services-pricing-box {
     background-color: #e32525;
     color: white;
-    padding: 20px;
-    margin: 100px auto 30px;
-    width: 90%; /* Responsive width */
+    padding: 40px;
+    margin: 150px auto 50px;
+    width: 60%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 .services-pricing-box h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .services-pricing-list {
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    font-size: 1.2em;
-    line-height: 1.8em;
+    font-size: 1.5em;
+    line-height: 2em;
 }
 
-/* Awards Section */
+/* Awards and Reviews Section */
 .award-features {
     list-style: none;
     padding: 0;
-    margin: 15px 0;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.google-reviews h4 {
+    font-size: 1.5em;
+    color: white;
+}
+
+.google-reviews p {
+    font-size: 1.1em;
 }
 
 /* Centered Service Hours & Location Section */
 .centered-info-boxes {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center horizontally */
     text-align: center;
-    padding: 30px 0;
+    padding: 50px 0;
     background-color: #f9f9f9;
 }
 
@@ -204,9 +225,8 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Space between boxes */
     width: 90%; /* Responsive width */
-    max-width: 500px;
-    margin-bottom: 20px;
 }
 
 /* Map Section */
@@ -239,26 +259,37 @@ footer {
     width: 100%;
 }
 
-/* Responsive Design for Mobile */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .navbar ul {
-        flex-wrap: wrap; /* Wrap navigation items */
+    .navbar {
+        flex-wrap: wrap;
         justify-content: center;
     }
 
     .navbar ul li {
-        margin: 5px 10px; /* Adjust spacing */
+        margin: 5px 10px;
     }
 
     .navbar ul li a {
-        font-size: 1em; /* Reduce font size */
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    .payment-btn a {
+        font-size: 1.2em;
+        padding: 10px 20px;
     }
 
     .services-pricing-box {
-        padding: 15px;
+        width: 90%;
     }
 
     .about-box, .awards-reviews-box {
-        padding: 15px;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .info-box {
+        width: 90%;
     }
 }
